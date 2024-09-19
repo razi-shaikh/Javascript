@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 25%;
+            text-align: center;
+            align-items: center;
+        }
+        button{
+            font-size: 45px;
+            border-radius: 50px;
+            margin: 0px 15px;
+            padding: 10px 25px;
+        }
+    </style>
+</head>
+<body style="background-color: #313131;">
+    <button id="red">red</button>
+    <button id="green">green</button>
+    <button id="blue">blue</button>
+</body>
+    <script>
+        /*
+        document.getElementById('red').onclick = function(){
+            document.body.style.backgroundColor = 'red'
+        }
+        document.getElementById('green').onclick = function(){
+            document.body.style.backgroundColor = 'green'
+        }
+        document.getElementById('blue').onclick = function(){
+            document.body.style.backgroundColor = 'blue'
+        }
+        */
+        function clickHandeler(color){
+            // document.body.style.backgroundColor = `${color}`
+            function apply(){
+                document.body.style.backgroundColor = `${color}`
+            }
+            return apply;
+        }
+        document.getElementById('red').onclick = clickHandeler('red')
+        document.getElementById('green').onclick = clickHandeler('green')
+        document.getElementById('blue').onclick = clickHandeler('blue')
+        
+    </script>
+</html>

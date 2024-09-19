@@ -1,0 +1,1 @@
+var value1,value2;

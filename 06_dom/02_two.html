@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<style>
+
+</style>
+<body style="background-color: #212121;color: #fff;font-size: large;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thirsday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+</body>
+<script>
+    const parentDiv=document.querySelector('.parent')
+    // console.log(parentDiv);
+    // console.log(parentDiv.children);
+    // console.log(parentDiv.children[5]);
+    
+
+    colorPicker=['#00ffff','#00ff99','#ffff00','#cc99ff','#ff6600','#ff33cc','#ffcccc']
+    for (let increment = 0; increment < parentDiv.children.length; increment++) {
+        console.log(parentDiv.children[increment].innerHTML);
+        parentDiv.children[increment].style.color=`${colorPicker[increment]}`
+    }
+
+    
+    parent.children[1].style.color = "orange"
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+
+    console.log("NODES: ", parent.childNodes);
+</script>
+</html>

@@ -1,0 +1,49 @@
+body{
+    background-color: #212121;
+    font-size: 20px;
+}
+.navigationBar{
+    /* align-items: center; */
+    text-align: center;
+    background-color: #c8c8c8;
+    font-size: 25px;
+    padding: 16px;
+}
+nav a{
+    text-decoration: none;
+    border: 2px solid #212121;
+    padding: 3px 30px 3px  30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.main{
+    background-color: rgb(82, 79, 79);
+    align-items: center;
+    text-align: center;
+}
+label{
+    font-size: 65px;
+}
+input{
+    font-size: 30px;
+}
+.guessField{
+    text-align: center;
+    border-radius: 25px;
+    border-top: 4px solid red;
+    border-right: 4px solid red;
+    border-left: none;
+    border-bottom: none;
+}
+.submitBut{
+    margin-top: 20px;
+    border-radius: 25px;
+}
+.messageBox{
+    font-size: 35px;
+    color: wheat;
+    padding-bottom: 10px;
+}
+#newGameBut{
+    display: none;
+}

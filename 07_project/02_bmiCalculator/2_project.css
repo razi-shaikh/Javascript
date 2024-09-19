@@ -1,0 +1,24 @@
+.navigationBar{
+    /* align-items: center; */
+    text-align: center;
+    background-color: #c8c8c8;
+    font-size: 25px;
+    padding: 16px;
+}
+nav a{
+    text-decoration: none;
+    border: 2px solid #212121;
+    padding: 3px 30px 3px  30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+label{
+    font-size: 20px;
+}
+input{
+    font-size: 26px;
+}
+button{
+    margin-top: 25px;
+    font-size: 25px;
+}

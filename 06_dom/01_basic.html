@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        .body{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="body">
+    <div>
+        <h1 id="title" class="heading">
+            This is Title Tag<span style="display: none;">This is Span, its disable</span></h1>
+
+        <h2 class="h2_item">One</h2>
+        <h2 class="h2_item">Two</h2>
+        <h2 class="h2_item">Three</h2>
+        <h2 class="h2_item">Four</h2>
+        <h2 class="h2_item">Five</h2>
+        <h2 class="h2_item">Six</h2>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, eaque placeat laudantium fuga consequatur neque odio quis totam fugiat assumenda. Animi quo, veniam distinctio id earum facere beatae ex dolorem.</p>
+    </div>
+
+    <script>
+        let title=document.getElementById('title')
+        // console.log(`this is value ${title}`);
+        console.log(title);
+        title.style.backgroundColor='red';
+        console.log(title.innerText);
+        console.log(title.textContent);
+        console.log(title.innerHTML);
+
+        const myH2=document.querySelectorAll('h2');
+        console.log(myH2);
+        myH2[0].style.backgroundColor='green'
+        console.log(myH2[0]);
+        myH2[2].style.color='red'
+
+        myH2.forEach(function (h2List) {
+            h2List.style.backgroundColor=('orange')
+        });
+
+        const classItem=document.getElementsByClassName('h2_item')
+        const h2ArrayConvert = Array.from(classItem)
+        h2ArrayConvert.map(function (h2List) {
+            h2List.style.color='black'
+            h2List.style.borderRadius='15px'
+            if(true){
+                myH2[5].innerHTML='seven'
+            }
+        })
+    </script>
+</body>
+</html>

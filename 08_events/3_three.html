@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let intervalManage;
+
+    function changeText(){
+        const textH1=document.querySelector('h1').innerHTML=`Context is Changed By Clinked Start Button`
+        console.log('hiii');
+    }
+    
+    document.querySelector('#start').addEventListener('click',()=>{
+        intervalManage = setInterval(changeText,1000,0)
+    })
+
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearInterval(intervalManage)
+    })
+</script>
+</html>
